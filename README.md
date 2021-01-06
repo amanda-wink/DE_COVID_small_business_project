@@ -5,3 +5,6 @@ This project is to explore the correlations between Delaware State COVID restric
 ## Use case:
 ## How it works:
 ## Technologies Used:
+
+### Data from:
+The Economic Tracker at  https://tracktherecovery.org and accompanying paper https://opportunityinsights.org/wp-content/uploads/2020/05/tracker_paper.pdf.
