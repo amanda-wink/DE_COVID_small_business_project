@@ -6,6 +6,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__)
+server = app.server
 
 data = vis.restrict_df()
 delaware_df1, delware_df2 = vis.get_state_data()
@@ -49,7 +50,7 @@ app.layout = html.Div([
                 style={'textAlign':'center'}),
 
     dcc.Markdown('''
-    This project was developed by Zip Code Wilmington data engineering students Luke Roy, Deana Stuart, and Amanda Winkelmayer.
+    This project was developed by Zip Code Wilmington data engineering students [Luke Roy](https://www.linkedin.com/in/lucasjroy/), [Deana Stuart](www.linkedin.com/in/deanastuart), and [Amanda Winkelmayer](https://www.linkedin.com/in/engineer-amanda/).
     
     Learn more about our project on our [Github](https://github.com/deanastuart/DE_COVID_small_business_project).
     
@@ -86,4 +87,4 @@ def update_graph(var):
 
 if __name__ == '__main__':
     choropleth.make_map()
-    app.run_server(debug=True)
+    app.run_server(debug=False)

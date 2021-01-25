@@ -11,7 +11,7 @@ def connect_sql():
 
     :return: Connection to SQL
     """
-    sql = os.getenv('SQL')
+    sql = os.environ['SQL']
     str_sql = 'mysql+mysqlconnector://' + sql
     engine = create_engine(str_sql)
     return engine

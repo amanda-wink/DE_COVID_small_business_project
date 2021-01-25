@@ -228,5 +228,3 @@ if __name__ == "__main__":
     fig3([['Revenue', 'Merchants'], [Sussex_r, Sussex_m], ['revenue_all', 'merchants_all']], restrict, "Sussex County")
     fig3([['Revenue', 'Merchants'], [Kent_r, Kent_m], ['revenue_all', 'merchants_all']], restrict, "Kent County")
     fig3([['Revenue', 'Merchants'], [NCC_r, NCC_m], ['revenue_all', 'merchants_all']], restrict, "New Castle County")
-
-
